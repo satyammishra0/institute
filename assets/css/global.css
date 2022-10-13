@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Signika", sans-serif;
+  list-style: none;
+}
+
+/* Smoooth body scrolling  */
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --side-padding: 0 9%;
+  --section-padding: 5% 9%;
+  --black: #000;
+  --white: #fff;
+  --border-radius: 15px;
+  /* Global CSS */
+  --primary-color: #5a4bda;
+  --primary-lighter-color: #cec9f4;
+  --primary-darker-color: #3f33cb;
+  --text-primary-color: #fff;
+  --text-primary-lighter-color: #000000de;
+  --text-primary-darker-color: #fff;
+  --accent-color: #eb427e;
+  --accent-lighter-color: #f9c6d8;
+  --accent-darker-color: #e22b61;
+  --text-accent-color: #fff;
+  --text-accent-lighter-color: #000000de;
+  --text-accent-darker-color: #fff;
+  --warn-color: #ff1148;
+  --warn-lighter-color: #ffb8c8;
+  --warn-darker-color: #ff0a30;
+  --text-warn-color: #fff;
+  --text-warn-lighter-color: #000000de;
+  --text-warn-darker-color: #fff;
+}
+
+body {
+  font-size: 16px;
+}

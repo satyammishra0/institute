@@ -1,0 +1,272 @@
+/* ---------------------- */
+/* Hero section */
+/* ---------------------- */
+
+.hero-section {
+  background-color: #f9f8ff;
+  width: 100%;
+  padding: 9%;
+  grid-template-columns: 45% 1fr;
+  background-image: url(https://pwskills.com/libs/assets/main/home/component.svg);
+}
+.hero-section-content {
+  padding: 0 2%;
+}
+
+.hero-section-content > h1 {
+  font-size: 45px;
+  font-weight: 300;
+  color: #43486f;
+}
+
+.courses-card {
+  width: 100%;
+  position: relative;
+  background-color: vaR(--white);
+  z-index: 0;
+  box-shadow: 0 3px 6px #0000000f;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  transition: border 0.3s;
+}
+.courses-card:hover {
+  border: 1px solid vaR(--primary-color);
+}
+
+.free-btn {
+  position: absolute;
+  top: -4.6%;
+  left: 4%;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-weight: 700;
+  z-index: 1;
+  border: 0.4px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.course-desc-1 {
+  grid-gap: 8%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-content {
+  padding: 5%;
+}
+
+.course-name-heading {
+  font-weight: 300;
+  font-size: 22px;
+}
+.course-img {
+  padding: 14px;
+  border-radius: 10px;
+  background-color: #eff7ff;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.course-img > img {
+  height: 60px;
+}
+
+.course-timing > h4 {
+  margin: 10% 0;
+}
+.course-timing > p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #43486f;
+}
+.course-timing > button {
+  width: 100%;
+  margin-top: 8%;
+  padding: 15px;
+  border: 1px solid var(--primary-color);
+  color: vaR(--white);
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* ---------------------- */
+/* Company image slider*/
+/* ---------------------- */
+
+.company-img-slider {
+  padding: var(--section-padding);
+}
+.company-img-slider > h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.company-slider {
+  overflow: hidden;
+}
+
+.company-slider > img {
+  height: 40px;
+  width: 120px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 60px;
+}
+
+.company-slider > img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+/* ---------------------- */
+/* Courses cards here */
+/* ---------------------- */
+
+.all-courses-cards {
+  padding: var(--section-padding);
+}
+
+.all-courses-cards > h2 {
+  text-align: center;
+}
+
+.all-cards {
+  padding: 5% 18%;
+}
+
+/* ---------------------- */
+/*  Boost skill section  */
+/* ---------------------- */
+
+.boost-skill-section {
+  padding: var(--section-padding);
+  padding-top: 0;
+}
+
+.boost-skill-section > h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.skill-box-container {
+  padding: 0 5%;
+  border-radius: 8px;
+  background-color: #f9f8ff;
+}
+
+.skill-box {
+  grid-template-columns: 50% 1fr;
+  grid-gap: 8%;
+}
+
+.skill-box-content {
+  padding-top: 15%;
+}
+
+.skill-box-content > p:first-child {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.skill-box-content > p:last-child {
+  margin-top: 8%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.skill-box-img > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---------------------- */
+/*  Our Coaches section  */
+/* ---------------------- */
+
+.our-coaches-section {
+  padding: vaR(--section-padding);
+  padding-top: 0;
+}
+.our-coaches-section > h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.profile-cards-conainer {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6%;
+}
+
+.profile-cards {
+  box-shadow: 0 6px 22px #0000001a;
+  padding: 8% 5%;
+  border-radius: 8px;
+  background-color: vaR(--primary-color);
+  color: #f9f8ff;
+}
+
+.profile-card-image {
+  width: 100%;
+}
+
+.profile-card-image > img {
+  height: 160px;
+  border-radius: 50%;
+  padding: 5%;
+  background-color: vaR(--white);
+}
+
+.designation > h4 {
+  font-size: 25px;
+  margin-top: 5%;
+}
+.designation > p {
+  margin-bottom: 5%;
+}
+
+.profiles-company-img > img {
+  height: 30px;
+  padding: 2%;
+  background-color: vaR(--white);
+}
+
+/* ---------------------- */
+/* FAQ / Doubts section  */
+/* ---------------------- */
+
+.doubts-section {
+  padding: vaR(--section-padding);
+  padding-top: 0;
+}
+.doubts-section > h2 {
+  text-align: center;
+}
+
+.doubts-container {
+  padding: 5%;
+  padding-bottom: 10%;
+  background-color: #f9f8ff;
+}
+
+.question {
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+}
+.question > details > summary {
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.question > details > p {
+  margin-top: 5%;
+  font-size: 14px;
+  color: #3f3f3f;
+}

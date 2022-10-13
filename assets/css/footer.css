@@ -1,0 +1,105 @@
+/* ---------------------- */
+/* Footer section */
+/* ---------------------- */
+
+.footer-section {
+  padding: var(--section-padding);
+  padding-top: 0;
+  /* background-color: vaR(--primary-color); */
+  background-color: #120b1a;
+  width: 100%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  padding-bottom: 2%;
+  letter-spacing: 0.8px;
+}
+
+.footer-container {
+  padding: 5% 0;
+  grid-template-columns: 55% 17% 17%;
+  grid-gap: 5%;
+}
+
+.footer-company-desc > img {
+  height: 50px;
+  width: 158px;
+}
+
+.footer-company-about {
+  font-weight: 300;
+  margin: 5% 0;
+  width: 60%;
+  font-size: 17px;
+  color: #f9f8ff;
+}
+
+.social-icons > p {
+  color: vaR(--accent-color);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.footer-social-media-icons {
+  padding: 5px;
+  background-color: vaR(--white);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.footer-social-media-icons > img {
+  height: 25px;
+}
+
+.fb-logo {
+  margin-left: 10px;
+}
+.footer-contact-mail {
+  margin-top: 5%;
+}
+.footer-contact-mail > a {
+  font-weight: 300;
+  font-size: 20px;
+  color: #f9f8ff;
+}
+
+.footer-contact-mail > span {
+  color: vaR(--accent-color);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.footer-grid-heaidng {
+  color: vaR(--accent-color);
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.footer-grid-list > li {
+  margin-bottom: 15px;
+}
+
+.footer-grid-list > li > a {
+  color: vaR(--white);
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.footer-bottom {
+  border-top: 1px solid vaR(--white);
+  padding: 2% 0;
+  padding-bottom: 0;
+}
+.footer-bottom-company-links {
+  gap: 30px;
+}
+.footer-bottom-company-links > a {
+  padding-right: 20px;
+  color: var(--white);
+  font-weight: 300;
+  font-size: 17px;
+  border-right: 2px solid var(--white);
+}
+.footer-bottom > p {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 17px;
+}

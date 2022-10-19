@@ -1,0 +1,97 @@
+/* ---------------------- */
+/* Contact us section  */
+/* ---------------------- */
+.contact-company-info {
+  padding: vaR(--section-padding);
+  text-align: center;
+}
+
+.contact-company-info > h2 {
+  margin-bottom: 2%;
+}
+
+/* ---------------------- */
+/* Contact/Connect formn  */
+/* ---------------------- */
+
+.contact-container {
+  padding: var(--section-padding);
+  background-color: #f9f8ff;
+}
+
+.map {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.map > iframe {
+  border-radius: 6px;
+}
+.contact-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2% 5%;
+  font-size: 15px;
+  color: grey;
+  background-color: #fff;
+  margin: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-form-container > form > input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin-bottom: 2%;
+  padding: 10px;
+}
+.box-headings {
+  margin-bottom: 2%;
+  text-transform: capitalize;
+}
+
+.contact-form-container > h2 {
+  margin-bottom: 4%;
+}
+
+.contact-form-container > form > textarea {
+  width: 100%;
+  height: 160px;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.contact-form-container > form > button {
+  width: 100%;
+  background-color: vaR(--primary-color);
+  color: vaR(--white);
+  padding: 8px 0;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-top: 3%;
+  cursor: pointer;
+  border: none;
+}
+.contact-info-mail > a {
+  color: vaR(--primary-color);
+}
+
+.contact-info-phone > a {
+  color: vaR(--primary-color);
+}
+
+/* ---------------------- */
+/*  Media query ----------*/
+/* ---------------------- */
+
+@media only screen and (max-width: 900px) {
+  .contact-container.grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

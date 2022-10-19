@@ -1,8 +1,9 @@
 <title>PW Skills</title>
+
 <!-- ---------------------- -->
 <!-- ------ Routes here ------>
 <!-- ---------------------- -->
-<?php include('./includes/routes.php'); ?>
+<?php include('routes.php'); ?>
 
 <!-- ---------------------- -->
 <!-- ------ Metas here  ------>

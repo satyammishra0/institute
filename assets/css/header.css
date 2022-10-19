@@ -44,3 +44,15 @@ header {
   line-height: 2;
   font-size: 16px;
 }
+
+/* ---------------------- */
+/* Header media query */
+/* ---------------------- */
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .navs {
+    display: none;
+  }
+}

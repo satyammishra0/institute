@@ -11,8 +11,8 @@
     <div class="navs">
         <nav class="flex-center">
             <li><a href="<?= homePath() . 'pages/courses.php'; ?>">Courses</a></li>
-            <li><a href="<?= homePath() . 'pages/contact.php'; ?>">About Us</a></li>
-            <li><a href="<?= homePath() . 'pages/about.php'; ?>">Contact Us</a></li>
+            <li><a href="<?= homePath() . 'pages/about.php'; ?>">About Us</a></li>
+            <li><a href="<?= homePath() . 'pages/contact.php'; ?>">Contact Us</a></li>
             <button onclick="window.location.href='<?= INCLUDEPATH . '/header.php'; ?>'"><span>My Learnings</span></button>
         </nav>
     </div>

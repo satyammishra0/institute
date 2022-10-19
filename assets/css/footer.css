@@ -103,3 +103,30 @@
   font-weight: 300;
   font-size: 17px;
 }
+
+/* ---------------------- */
+/* Footer view media query */
+/* ---------------------- */
+
+@media only screen and (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+  .footer-company-about {
+    width: 100%;
+  }
+  .footer-company-desc {
+    padding-top: 10%;
+    margin-bottom: 5%;
+  }
+  .footer-bottom.flex-center-between {
+    display: unset;
+  }
+  .footer-bottom > p {
+    margin-top: 4%;
+  }
+  .footer-grid-heaidng {
+    margin-bottom: 10px;
+  }
+}

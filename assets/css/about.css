@@ -1,0 +1,65 @@
+/* ---------------------- */
+/* About us  section  */
+/* ---------------------- */
+.about-header-img {
+  background-image: url(../images/pw-team.jfif);
+  position: relative;
+  height: 80vh;
+}
+
+.about-header-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.605946602273722) 28%,
+    rgba(254, 255, 255, 0.3566468823857668) 100%
+  );
+}
+
+.about-header-content {
+  font-size: 65px;
+  position: relative;
+  top: 30%;
+  color: vaR(--white);
+  left: 10%;
+  font-weight: 700;
+}
+.about-header-content > span {
+  color: vaR(--primary-color);
+}
+
+.about-company-desc {
+  padding: var(--section-padding);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.about-owner {
+  padding: var(--section-padding);
+  background-color: #f9f8ff;
+}
+
+.about-owner > p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 900px) {
+  .about-header-img {
+    height: 25vh;
+  }
+  .about-header-content {
+    font-size: 29px;
+    text-align: center;
+    top: 30%;
+    color: vaR(--#fff);
+    left: 57%;
+    font-weight: 700;
+  }
+}

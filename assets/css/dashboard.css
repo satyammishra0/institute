@@ -1,0 +1,210 @@
+/* ----------------------  */
+/* Dashboard Design */
+/* ----------------------  */
+
+:root {
+  --text-color: #1c1a2c;
+}
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 23% 1fr;
+}
+
+/* ----------------------  */
+/* Dashboard Left design */
+/* ----------------------  */
+.dashboard-left {
+  padding: 5%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: rgb(252 252 255);
+  border-right: 1px solid #ccc;
+}
+
+.logo {
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 5%;
+  padding-bottom: 10%;
+}
+
+.logo > img {
+  height: 35px;
+}
+
+.logo > a {
+  font-weight: 700;
+  color: vaR(--primary-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.content-btn {
+  width: 100%;
+  margin-top: 2%;
+  border-radius: 4px;
+}
+
+.content-btn:active {
+  background-color: vaR(--primary-color);
+  color: vaR(--primary-lighter-color);
+}
+
+.content-btn:active.content-btn > button {
+  color: vaR(--primary-lighter-color);
+}
+
+.content-btn > button {
+  padding: 15px 25px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.content-type > ion-icon {
+  font-size: 22px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.content-type > p {
+  font-size: 16px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+/* ----------------------  */
+/* Dashboard right Design */
+/* ----------------------  */
+.dashboard-header {
+  padding: 2% 5%;
+  width: 100%;
+  font-size: 18px;
+  background: #fff 0% 0% no-repeat padding-box;
+  box-shadow: 0 3px 10px #0000001a;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  padding: 4px;
+  background-color: vaR(--primary-color);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* ----------------------  */
+/* All course ssection */
+/* ----------------------  */
+.content-container {
+  padding: 5%;
+}
+
+.all-courses-container > h2 {
+  color: vaR(--primary-color);
+  margin-bottom: 5%;
+}
+
+.all-courses-container {
+  /* display: none; */
+  display: block;
+}
+
+/* ----------------------  */
+/* My course ssection */
+/* ----------------------  */
+
+.my-courses-container > h2 {
+  color: vaR(--primary-color);
+  margin-bottom: 5%;
+}
+
+.my-courses-container {
+  display: none;
+}
+
+/* ----------------------  */
+/* Contact details */
+/* ----------------------  */
+
+.support-details {
+  display: none;
+}
+
+.support-details > h2 {
+  font-size: 22px;
+  color: #333333;
+  margin-bottom: 4%;
+}
+
+.support-details > p {
+  font-size: 18px;
+  line-height: 2;
+  color: #000000de;
+}
+
+.support-details > button {
+  padding: 8px 18px;
+  margin-top: 3%;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
+
+.support-details > h4 {
+  margin: 5% 0% 2% 0;
+  font-size: 20px;
+  color: #333333;
+}
+.social-icon {
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: var(--primary-lighter-color);
+  border-radius: 4px;
+}
+.social-icon > a {
+  font-size: 25px;
+  line-height: 0;
+}
+.social-icon > a > img {
+  height: 35px;
+}
+
+/* ----------------------  */
+/* About us section */
+/* ----------------------  */
+
+.about-us {
+  display: none;
+}
+
+/* ----------------------  */
+/* Privacy Policy section */
+/* ----------------------  */
+
+.privacy-policy > h2 {
+  margin: 2% 0;
+}
+.privacy-policy > p {
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  word-spacing: 0.8px;
+}
+.privacy-policy {
+  display: none;
+}

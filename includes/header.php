@@ -13,7 +13,7 @@
             <li><a href="<?= homePath() . 'pages/courses.php'; ?>">Courses</a></li>
             <li><a href="<?= homePath() . 'pages/about.php'; ?>">About Us</a></li>
             <li><a href="<?= homePath() . 'pages/contact.php'; ?>">Contact Us</a></li>
-            <button onclick="window.location.href='<?= INCLUDEPATH . '/header.php'; ?>'"><span>My Learnings</span></button>
+            <button onclick="window.location.href='<?= INCLUDEPATH . '/header.php'; ?>'"><span>Login/ Register</span></button>
         </nav>
     </div>
 </header>

@@ -11,4 +11,4 @@
 <meta name="description" content="Free Courses for Coding">
 <meta name="keywords" content="HTML, CSS, JavaScript, JAVA, C++">
 <meta name="author" content="Satyam Mishra">
-<link rel="icon" type="image/x-icon" href="<?php echo getImg('favicon.ico'); ?>">
+<link rel="icon" type="image/x-icon" href="<?= getImg('favicon.ico'); ?>">

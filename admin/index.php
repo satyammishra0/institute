@@ -35,9 +35,8 @@ session_start();
         <div class="dashboard-left ">
             <div class="logo flex-center-between">
                 <img src="<?= getImg('skills_logo.png'); ?>" alt=" Top svg">
-                <br> <a href="#" onclick="view_profile()">Edit Profile</a>
-
-
+                <br>
+                <button id="open-btn"><a href="#">Edit Profile</a></button>
             </div>
             <div class="content-list">
                 <div onclick="hideDivOne(this)" class="content-btn">
@@ -343,6 +342,43 @@ session_start();
                 </div>
             </div>
 
+            <!-- Set the CSS -->
+            <dialog class="profile-dialog" id="modal">
+                <div class="dialog-header flex-center-between">
+                    <h2>Edit Profile</h2>
+                    <button id="close-btn" class="flex-center">X</button>
+                </div>
+                <div class="dialog-container">
+                    <div class="dialog-field-container flex">
+                        <label for="">Name: </label>
+                        <input type="text">
+                    </div>
+                    <div class="dialog-field-container flex-center">
+                        <label for="">Gender: </label>
+                        <input type="checkbox"><label for="male">Male</label>
+                        <input type="checkbox"><label for="Female">Female</label>
+                    </div>
+                    <div class="dialog-field-container flex">
+                        <label for="">Mobile No. : </label>
+                        <input type="Number">
+                    </div>
+                    <div class="dialog-field-container flex">
+                        <label for="">Mail: </label>
+                        <input type="Email">
+                    </div>
+                    <div class="dialog-field-container flex">
+                        <label for="">Language Prefered: </label>
+                        <select name="English" id="English" value="English">
+                            <option value="Hignlish">Hignlish</option>
+                            <option value="English">English</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="dialog-footer flex-center">
+                    <button>Save Details</button>
+                </div>
+            </dialog>
         </div>
     </section>
 

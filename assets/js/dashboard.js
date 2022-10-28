@@ -50,3 +50,20 @@ function hideDivFive(e) {
   let privacy_Policy = document.getElementById("privacy-policy");
   temp(e, privacy_Policy);
 }
+
+//------------------------
+// Dialog Container Design
+//------------------------
+
+let open_Btn = document.getElementById("open-btn");
+let close_Btn = document.getElementById("close-btn");
+
+open_Btn.addEventListener("click", () => {
+  let modal = document.getElementById("modal");
+  modal.showModal();
+});
+
+close_Btn.addEventListener("click", () => {
+  let modal = document.getElementById("modal");
+  modal.close();
+});

@@ -90,7 +90,7 @@ session_start();
             <!-- ------ Header here ------>
             <!-- ---------------------- -->
             <div class="dashboard-header flex-center-between ">
-                <p class="username">Hello, <?= $_SESSION['otp']; ?></p>
+                <p class="username">Hello, <?= $_SESSION['username']; ?></p>
                 <div class="avatar ">
                     <ion-icon name="person-circle-outline"></ion-icon>
                 </div>
@@ -208,7 +208,7 @@ session_start();
                 <!-- ---------------------- -->
                 <div class="support-details class-selector" id="support-details">
                     <h2>Contact Us</h2>
-                    <p> Hi <?= $_SESSION['otp'] ?>!! I'm your MITRA!!
+                    <p> Hi <?= $_SESSION['username'] ?>!! I'm your MITRA!!
                         <br>
                         Facing issues with Courses, Videos etc??
                         <br>

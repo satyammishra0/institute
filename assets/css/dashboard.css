@@ -32,14 +32,20 @@
 .logo > img {
   height: 35px;
 }
+.logo > button {
+  background-color: vaR(--primary-color);
+  width: max-content;
+  cursor: pointer;
+  border: none;
+  padding: 6px 8px;
+}
 
-.logo > a {
-  font-weight: 700;
-  color: vaR(--primary-color);
+.logo > button > a {
+  font-weight: 500;
+  color: vaR(--white);
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
-  width: 100%;
 }
 
 .content-btn {

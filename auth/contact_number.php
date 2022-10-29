@@ -48,6 +48,10 @@
             <!-- <h2>Sign in / Signup in PW SKILLS</h2> -->
             <form action="number_authentication.php" method="POST">
                 <div class="input-container">
+                    <label class="mobile-lable" for="Name">Name</label><br>
+                    <input type="text" placeholder="Enter Your Name" name="username">
+                </div>
+                <div class="input-container">
                     <label class="mobile-lable" for="Number">Mobile</label><br>
                     <input type="number" placeholder="Enter Mobile Number" name="contact_number">
                 </div>

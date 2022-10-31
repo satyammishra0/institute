@@ -58,11 +58,7 @@
                 <?php
                 if (isset($_GET['error'])) {
                     $error = $_GET['error'];
-                    echo "
-              <div class='error' style='color:red;font-size:12px;'>
-              $error 
-              </div>
-                    ";
+                    echo "<div class='error' style='color:red;font-size:12px;'>$error</div> ";
                 }
                 ?>
                 <br>

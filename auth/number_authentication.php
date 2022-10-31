@@ -14,21 +14,25 @@ if (isset($_POST['submit_btn'])) {
     if (strlen($num) == 10 && preg_match('^[789]\d{9}$^', $num) && strlen($name)) {
         session_start();
 
+        // Generating Random Otp
         $otp = rand(1000, 9999);
-        // Authorisation details
         $_SESSION['otp'] = $otp;
-        // $_SESSION['time'] = time();
-        // echo $_SESSION['time'];
 
-
+        // Storing current time on session
         $_SESSION['time'] = time();
+
+        // Storing current time on session
+        $_SESSION['contactNumber'] = $num;
+
+        // Storing username on session
         $_SESSION['username'] = $name;
-
-        // echo $_SESSION['time'];
-
         $success = "Number verified";
+
+        // Redirection to the next OTP page
         header('location:otp.php?success=' . $success);
     } else {
+
+        // If the number validation failed
         $error = 'Please enter a 10 digit valid number and name';
         header("Location:contact_number.php?error=" . $error);
         echo $error;

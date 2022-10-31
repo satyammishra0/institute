@@ -4,22 +4,29 @@ session_start();
 
 // OTP
 if (isset($_SESSION['otp'])) {
+
+    // Storing Inserted opt to a new variable
     $otp = $_POST['otp'];
+
     if ($_SESSION['otp'] == $otp) {
-        echo "otp match successful";
-        echo "<br>";
-        $country = date_default_timezone_get();
-        echo $country . "<br>";
-        date_default_timezone_set('Asia/Kolkata');
-        $time = date('G:i:s');
+
+        // Validating time needs to be less than 30 sec
         $setTime = $_SESSION['time'];
         $newTime = time();
         $netTime = $newTime - $setTime;
-        echo $netTime;
         if ($netTime > 30) {
+            // If time is greater than 30 sec than redirection
             $error = "OTP Timeout ! Please try again ";
             header("Location:contact_number.php?&error=" . $error);
         } else {
+
+            // Creating names for each session data
+            $username = $_SESSION['username'];
+            $otp = $_SESSION['otp'];
+            $contactNumber = $_SESSION['contactNumber'];
+
+            echo $username . "," . $otp . "," . $contactNumber;
+            // Inserting data into DB
             // header("Location:?success=" . $success . "&error=" . $error);
         }
     } else {
@@ -29,5 +36,6 @@ if (isset($_SESSION['otp'])) {
     }
 }
 
+// Get ip address how to get the user login
 
 // INSERT INTO `userdetails` (`id`, `name`, `contactno`, `otp`) VALUES ('1', '1satyam', '9005946009', '1234');

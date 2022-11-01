@@ -1,6 +1,10 @@
 <?php
 session_start();
-
+if (isset($_COOKIE['$USERNAME'])) {
+    echo "User logged in";
+} else {
+    header("Location:../auth/contact_number.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -393,7 +397,3 @@ session_start();
 </body>
 
 </html>
-
-<!-- Working on profile section visual repsentation
- and edit functionality then moving to DB and otp 
- verification -->

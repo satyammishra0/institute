@@ -1,7 +1,6 @@
 <?php
 session_start();
-if (isset($_COOKIE['$USERNAME'])) {
-    echo "User logged in";
+if (isset($_COOKIE['Username'])) {
 } else {
     header("Location:../auth/contact_number.php");
 }
@@ -95,8 +94,14 @@ if (isset($_COOKIE['$USERNAME'])) {
             <!-- ---------------------- -->
             <div class="dashboard-header flex-center-between ">
                 <p class="username">Hello, <?= $_SESSION['username']; ?></p>
-                <div class="avatar ">
-                    <ion-icon name="person-circle-outline"></ion-icon>
+
+                <div class="logout">
+                    <div class="avatar ">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </div>
+                    <a href="../auth/logout.php">
+                        <p>Logout</p>
+                    </a>
                 </div>
             </div>
             <!-- ---------------------- -->
@@ -355,7 +360,7 @@ if (isset($_COOKIE['$USERNAME'])) {
                 <div class="dialog-container">
                     <div class="dialog-field-container flex">
                         <label for="">Name: </label>
-                        <input type="text">
+                        <input type="text" value="<?= $_COOKIE['Username'] ?>">
                     </div>
                     <div class="dialog-field-container flex-center">
                         <label for="">Gender: </label>
@@ -364,7 +369,7 @@ if (isset($_COOKIE['$USERNAME'])) {
                     </div>
                     <div class="dialog-field-container flex">
                         <label for="">Mobile No. : </label>
-                        <input type="Number">
+                        <input type="Number" value="<?= $_SESSION['contactNumber'] ?>">
                     </div>
                     <div class="dialog-field-container flex">
                         <label for="">Mail: </label>

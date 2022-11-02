@@ -78,6 +78,3 @@
 </body>
 
 </html>
-
-
-<!-- Location:index.php?AccessError=' . $AccessError -->

@@ -7,6 +7,7 @@ $dbuserName = 'root';
 $password = '';
 $dbName = "institute";
 
+
 $conn = mysqli_connect($serverName, $dbuserName, $password, $dbName);
 
 if ($conn) {

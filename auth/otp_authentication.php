@@ -17,7 +17,7 @@ if (isset($_SESSION['otp'])) {
         if ($netTime > 30) {
             // If time is greater than 30 sec than redirection
             $error = "OTP Timeout ! Please try again ";
-            // header("Location:contact_number.php?&error=" . $error);
+            header("Location:contact_number.php?&error=" . $error);
         } else {
 
             // Creating names for each session data
@@ -26,16 +26,14 @@ if (isset($_SESSION['otp'])) {
             $contactNumber = $_SESSION['contactNumber'];
 
             // Creating Cookie
-            $cookie_name = "USERNAME";
-            $cookie_value = $_SESSION['username'];
-            setcookie($cookie_name, $cookie_value, time() + (60 * 60 * 24 * 30));
+            setcookie("Username", $username, time() + (86400 * 30), "/");
 
-            echo $username . "," . $otp . "," . $contactNumber;
             // Inserting data into DB
-            include '../configuration.php';
-            $insertQuery = "INSERT INTO `userdetails` ( `name`, `contactno`, `otp`) VALUES ( '$username', '$contactNumber', '$otp');";
+            include('../configuration.php');
+            include('../includes/routes.php');
+            $insertQuery = "INSERT INTO `userdetails` (`name`, `contactno`, `otp`) VALUES ( '$username', '$contactNumber', '$otp');";
             $runInsertQuery = mysqli_query($conn, $insertQuery);
-            header('Location:../admin');
+            header('Location: ' . homePath() . 'admin/index.php');
         }
     } else {
         $error = "OTP match unsuccessful";
@@ -43,7 +41,3 @@ if (isset($_SESSION['otp'])) {
         header("Location:otp.php?success=" . $success . "&error=" . $error);
     }
 }
-
-// Get ip address how to get the user login
-
-// INSERT INTO `userdetails` (`id`, `name`, `contactno`, `otp`) VALUES ('1', '1satyam', '9005946009', '1234');

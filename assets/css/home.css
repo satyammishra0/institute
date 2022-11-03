@@ -7,7 +7,7 @@
   width: 100%;
   padding: 9%;
   grid-template-columns: 45% 1fr;
-  background-image: url(https://pwskills.com/libs/assets/main/home/component.svg);
+  background-image: url("https://pwskills.com/libs/assets/main/home/component.svg");
 }
 .hero-section-content {
   padding: 0 2%;
@@ -111,16 +111,7 @@
 .company-slider > img {
   height: 40px;
   width: 120px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  cursor: pointer;
-  transition: all 0.3s;
   margin-right: 60px;
-}
-
-.company-slider > img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 /* ---------------------- */

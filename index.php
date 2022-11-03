@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+print_r($_SESSION);
+// $_SESSION['session_id'] = 1234;
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

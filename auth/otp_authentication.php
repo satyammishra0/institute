@@ -1,5 +1,7 @@
 <?php
 session_start();
+print_r($_SESSION);
+exit;
 
 
 // OTP
@@ -26,8 +28,8 @@ if (isset($_SESSION['otp'])) {
             $contactNumber = $_SESSION['contactNumber'];
 
             // Creating Cookie
-            setcookie("Username", $username, time() + (86400 * 30), "/");
-
+            // setcookie("Username", $username, time() + (86400 * 30), "/");
+            $_SESSION['site1_username'] = $username;
             // Inserting data into DB
             include('../configuration.php');
             include('../includes/routes.php');

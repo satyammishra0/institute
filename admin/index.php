@@ -1,8 +1,10 @@
 <?php
-session_start();
-if (isset($_COOKIE['Username'])) {
+require_once "../configuration.php";
+print_r($_SESSION);
+// exit;
+if (isset($_SESSION['site1_username'])) {
 } else {
-    header("Location:../auth/contact_number.php");
+    // header("Location:../auth/contact_number.php");
 }
 ?>
 
@@ -93,7 +95,7 @@ if (isset($_COOKIE['Username'])) {
             <!-- ------ Header here ------>
             <!-- ---------------------- -->
             <div class="dashboard-header flex-center-between ">
-                <p class="username">Hello, <?= $_SESSION['username']; ?></p>
+                <p class="username">Hello, <?= $_SESSION['site1_username'] ?></p>
 
                 <div class="logout">
                     <div class="avatar ">
@@ -217,7 +219,7 @@ if (isset($_COOKIE['Username'])) {
                 <!-- ---------------------- -->
                 <div class="support-details class-selector" id="support-details">
                     <h2>Contact Us</h2>
-                    <p> Hi <?= $_SESSION['username'] ?>!! I'm your MITRA!!
+                    <p> Hi <?= $_COOKIE['Username'] ?>!! I'm your MITRA!!
                         <br>
                         Facing issues with Courses, Videos etc??
                         <br>

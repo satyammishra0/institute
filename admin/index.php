@@ -40,7 +40,7 @@ $userContactNo = $userDetails['contactno'];
     <link rel="stylesheet" href="<?= getCss('utility.css'); ?>">
     <link rel="stylesheet" href="<?= getCss('footer.css'); ?>">
     <link rel="stylesheet" href="<?= getCss('login.css'); ?>">
-    <link rel="stylesheet" href="<?= getCss('dashboard.css'); ?>">
+    <link rel="stylesheet" href="<?= getCss('user_dashboard.css'); ?>">
 </head>
 
 <body>

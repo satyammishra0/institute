@@ -1,9 +1,6 @@
 <?php
+require_once "./configuration.php";
 
-session_start();
-
-// print_r($_SESSION);
-// $_SESSION['session_id'] = 1234;
 
 ?>
 

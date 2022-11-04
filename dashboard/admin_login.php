@@ -40,7 +40,7 @@ require_once "../configuration.php";
     </div>
     <center>
         <div class="form-container ">
-            <form action="login_check.php" method="POST">
+            <form action="admin_login_check.php" method="POST">
                 <div class="input-container">
                     <label class="mobile-lable" for="Email">Email</label><br>
                     <input type="email" placeholder="Enter Your Email" name="admin_email">

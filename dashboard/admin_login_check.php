@@ -14,19 +14,27 @@ $adminPassword = $fetchAdminDetails['password'];
 
 
 // Getting the user entered data 
-$enterdMail = $_POST['admin_email'];
+$enterdMail = strtolower($_POST['admin_email']);
 $enteredPassword = $_POST['admin_password'];
 
 
 // if details are correct directing to DB
 if ($enterdMail == $adminEmail && $enteredPassword == $adminPassword) {
+
+    // Storing success message on session
+    $success_message = 'He is the admin boss 👑';
+    $_SESSION['success'] = $success_message;
+
+    header('Location:./index.php?&success_message=' . $success_message);
 }
 
 
 // Pushing back to login page with error
 else {
-    $error = "You are not the Admin (🙂) ! Please complete the details";
-    header('Location:./login.php?&error=' . $error);
+    echo "hello world";
+
+    $error = "You are not the Admin (🙂) ! Please recheck the details";
+    // header('Location:./admin_login.php?&error=' . $error);
 }
 
 ?>

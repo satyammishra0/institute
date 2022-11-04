@@ -17,41 +17,41 @@ if (isset($_SESSION['otp'])) {
         $setTime = $_SESSION['time'];
         $newTime = time();
         $netTime = $newTime - $setTime;
-        // if ($netTime > 30) {
+        if ($netTime > 30) {
 
-        // If time is greater than 30 sec than redirection
-        $error = "OTP Timeout ! Please try again ";
-        // header("Location:contact_number.php?&error=" . $error);
-        // } else {
-
-
-        // Creating names for each session data
-        $username = $_SESSION['username'];
-        $otp = $_SESSION['otp'];
-        $contactNumber = $_SESSION['contactNumber'];
+            // If time is greater than 30 sec than redirection
+            $error = "OTP Timeout ! Please try again ";
+            header("Location:contact_number.php?&error=" . $error);
+        } else {
 
 
-        // Inserting data into DB
-        include('../includes/routes.php');
-        $insertQuery = "INSERT INTO `userdetails` (`name`, `contactno`, `otp`) VALUES ( '$username', '$contactNumber', '$otp');";
-        $runInsertQuery = mysqli_query($conn, $insertQuery);
+            // Creating names for each session data
+            $username = $_SESSION['username'];
+            $otp = $_SESSION['otp'];
+            $contactNumber = $_SESSION['contactNumber'];
 
 
-        // Fetching ID from Database to store in Cookie
-        $fetchIdQuery = "SELECT `id` FROM `userdetails` WHERE `contactno`= $contactNumber  ORDER BY `contactno` DESC LIMIT 1;";
-        $IdResult = mysqli_query($conn, $fetchIdQuery);
-        $IdValue = mysqli_fetch_assoc($IdResult);
+            // Inserting data into DB
+            include('../includes/routes.php');
+            $insertQuery = "INSERT INTO `userdetails` (`name`, `contactno`, `otp`) VALUES ( '$username', '$contactNumber', '$otp');";
+            $runInsertQuery = mysqli_query($conn, $insertQuery);
 
 
-        // Creating Cookie and storing the ID value on cookie
-        setcookie("UserId", $IdValue, time() + (86400 * 30), "/");
+            // Fetching ID from Database to store in Cookie
+            $fetchIdQuery = "SELECT `id` FROM `userdetails` WHERE `contactno`= $contactNumber  ORDER BY `contactno` DESC LIMIT 1;";
+            $IdResult = mysqli_query($conn, $fetchIdQuery);
+            $IdValue = mysqli_fetch_assoc($IdResult);
+            print_r($IdValue['id']);
+
+            // Creating Cookie and storing the ID value on cookie
+            setcookie("UserId", $IdValue['id'], time() + (86400 * 30), "/");
 
 
-        // header('Location: ' . homePath() . 'admin/index.php');
-        // }
+            header('Location: ' . homePath() . 'admin/index.php');
+        }
     } else {
         $error = "OTP match unsuccessful";
         $success = "Number verified";
-        // header("Location:otp.php?success=" . $success . "&error=" . $error);
+        header("Location:otp.php?success=" . $success . "&error=" . $error);
     }
 }

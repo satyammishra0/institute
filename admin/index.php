@@ -17,8 +17,6 @@ $userDetails = mysqli_fetch_assoc($getUserQueryExecute);
 $userName = $userDetails['name'];
 $userContactNo = $userDetails['contactno'];
 
-
-exit();
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +26,7 @@ exit();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dashboard || <?= 'user'; ?></title>
+    <title> Dashboard || <?= $userName; ?></title>
     <!-- ---------------------- -->
     <!-- ------ Routes here ------>
     <!-- ---------------------- -->
@@ -232,7 +230,7 @@ exit();
                 <!-- ---------------------- -->
                 <div class="support-details class-selector" id="support-details">
                     <h2>Contact Us</h2>
-                    <p> Hi <?= $_COOKIE['Username'] ?>!! I'm your MITRA!!
+                    <p> Hi <?= $userName ?>!! I'm your MITRA!!
                         <br>
                         Facing issues with Courses, Videos etc??
                         <br>

@@ -40,14 +40,25 @@
 
 .dashboard_logo > button > a {
   font-weight: 500;
-  color: vaR(--black);
+  color: vaR(--white);
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.dashboard-content-list > ul > li {
+.active_content_tab {
   margin: 4% 0;
+  background-color: var(--primary-color);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 2% 0;
+}
+
+.active_content_tab > button > a {
+  color: vaR(--white);
+}
+.active_content_tab > button > ion-icon {
+  color: vaR(--white);
 }
 
 .dashboard-content-list > ul > li > button {
@@ -57,13 +68,12 @@
   justify-content: center;
   place-items: center;
 }
-
-.dashboard-content-list > ul > li > button > a > ion-icon {
-  margin-top: 4px;
-}
-
 .dashboard-content-list > ul > li > button > a {
-  color: var(--text-primary-lighter-color);
+  font-size: 17px;
+}
+.dashboard-content-list > ul > li > button > ion-icon {
+  margin-top: 4px;
+  color: #551a8b;
 }
 
 .dashboard-footer {
@@ -73,8 +83,8 @@
   width: 100%;
   padding: 2.5% 0;
   background-color: vaR(--primary-color);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;

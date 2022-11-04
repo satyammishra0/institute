@@ -51,20 +51,23 @@ if ($_SESSION['success']) {
             </div>
             <div class="dashboard-content-list">
                 <ul>
-                    <li>
+                    <li class="active_content_tab">
                         <button class="flex flex-center">
+                            <ion-icon name="caret-forward"></ion-icon>
                             <a href="">
-                                <ion-icon name="caret-forward"></ion-icon>Add Course
+                                All Courses
                             </a>
                         </button>
                     </li>
                     <li>
                         <button class="flex flex-center">
+                            <ion-icon name="caret-forward"></ion-icon>
                             <a href="">
-                                <ion-icon name="caret-forward"></ion-icon> All Courses
+                                Add Course
                             </a>
                         </button>
                     </li>
+
                 </ul>
             </div>
             <div class="dashboard-footer">

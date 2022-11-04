@@ -1,11 +1,24 @@
 <?php
 require_once "../configuration.php";
-print_r($_SESSION);
-// exit;
-if (isset($_SESSION['site1_username'])) {
+
+// Validating the User with id 
+if (isset($_COOKIE['UserId'])) {
+    $userId = $_COOKIE['UserId'];
 } else {
-    // header("Location:../auth/contact_number.php");
+    header("Location:../auth/contact_number.php");
+    exit();
 }
+
+// Getting the Additional data from DB using ID in Coookie
+
+$getUserDataQuery = "SELECT * FROM `userdetails` WHERE `id`= $userId  ORDER BY `id` DESC LIMIT 1;";
+$getUserQueryExecute = mysqli_query($conn, $getUserDataQuery);
+$userDetails = mysqli_fetch_assoc($getUserQueryExecute);
+$userName = $userDetails['name'];
+$userContactNo = $userDetails['contactno'];
+
+
+exit();
 ?>
 
 <!DOCTYPE html>
@@ -95,7 +108,7 @@ if (isset($_SESSION['site1_username'])) {
             <!-- ------ Header here ------>
             <!-- ---------------------- -->
             <div class="dashboard-header flex-center-between ">
-                <p class="username">Hello, <?= $_SESSION['site1_username'] ?></p>
+                <p class="username">Hello, <?= $userName ?></p>
 
                 <div class="logout">
                     <div class="avatar ">
@@ -362,7 +375,7 @@ if (isset($_SESSION['site1_username'])) {
                 <div class="dialog-container">
                     <div class="dialog-field-container flex">
                         <label for="">Name: </label>
-                        <input type="text" value="<?= $_COOKIE['Username'] ?>">
+                        <input type="text" value="<?= $userName ?>">
                     </div>
                     <div class="dialog-field-container flex-center">
                         <label for="">Gender: </label>
@@ -371,7 +384,7 @@ if (isset($_SESSION['site1_username'])) {
                     </div>
                     <div class="dialog-field-container flex">
                         <label for="">Mobile No. : </label>
-                        <input type="Number" value="<?= $_SESSION['contactNumber'] ?>">
+                        <input type="Number" value="<?= $userContactNo  ?>">
                     </div>
                     <div class="dialog-field-container flex">
                         <label for="">Mail: </label>

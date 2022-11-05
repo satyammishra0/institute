@@ -46,6 +46,21 @@
   text-align: center;
 }
 
+.dashboard-content-list > ul > li > button {
+  border: none;
+  font-size: 22px;
+  background: none;
+  justify-content: center;
+  place-items: center;
+}
+.dashboard-content-list > ul > li > button {
+  font-size: 17px;
+  color: #551a8b;
+}
+.dashboard-content-list > ul > li > button > ion-icon {
+  margin-top: 4px;
+  color: #551a8b;
+}
 .active_content_tab {
   margin: 4% 0;
   background-color: var(--primary-color);
@@ -54,26 +69,11 @@
   padding: 2% 0;
 }
 
-.active_content_tab > button > a {
+.active_content_tab > button {
   color: vaR(--white);
 }
 .active_content_tab > button > ion-icon {
   color: vaR(--white);
-}
-
-.dashboard-content-list > ul > li > button {
-  border: none;
-  font-size: 22px;
-  background: none;
-  justify-content: center;
-  place-items: center;
-}
-.dashboard-content-list > ul > li > button > a {
-  font-size: 17px;
-}
-.dashboard-content-list > ul > li > button > ion-icon {
-  margin-top: 4px;
-  color: #551a8b;
 }
 
 .dashboard-footer {
@@ -155,3 +155,12 @@
 /* ---------------------- */
 /* Add a new course design */
 /* ---------------------- */
+.right-all-courses {
+  display: none;
+}
+
+.right-add-course > h2 {
+  color: vaR(--primary-color);
+  text-align: center;
+  margin-bottom: 2%;
+}

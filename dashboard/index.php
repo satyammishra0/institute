@@ -47,24 +47,20 @@ if ($_SESSION['success']) {
             <div class="dashboard_logo flex-center-between">
                 <img src="<?= getImg('skills_logo.png'); ?>" alt=" Top svg">
                 <br>
-                <button id="open-btn"><a href="#">Hello, Admin</a></button>
+                <button id="message_admin_btn"><a href="#">Hello, Admin</a></button>
             </div>
             <div class="dashboard-content-list">
                 <ul>
-                    <li class="active_content_tab">
-                        <button class="flex flex-center">
+                    <li>
+                        <button class="flex flex-center" id="all_courses_btn">
                             <ion-icon name="caret-forward"></ion-icon>
-                            <a href="">
-                                All Courses
-                            </a>
+                            All Courses
                         </button>
                     </li>
                     <li>
-                        <button class="flex flex-center">
+                        <button class="flex flex-center" id="add_courses_btn">
                             <ion-icon name="caret-forward"></ion-icon>
-                            <a href="">
-                                Add Course
-                            </a>
+                            Add Course
                         </button>
                     </li>
 
@@ -85,7 +81,7 @@ if ($_SESSION['success']) {
             <!-- ---------------------- -->
             <!-- ------All Courses Table-->
             <!-- ---------------------- -->
-            <div class="right-all-courses">
+            <div class="right-all-courses" id="right-all-courses">
                 <h2>
                     All Courses
                 </h2>
@@ -131,11 +127,22 @@ if ($_SESSION['success']) {
             <!-- ---------------------- -->
             <!-- ------Adding new courses   -->
             <!-- ---------------------- -->
-
+            <div class="right-add-course" id="right-add-course">
+                <h2>
+                    Want to give more to students <br>
+                    Let's Add more courses
+                </h2>
+            </div>
         </div>
 
     </section>
 
+
+    <!-- ---------------------- -->
+    <!--this Pages JS here  ------>
+    <!-- ---------------------- -->
+
+    <script src="../assets/js/admin_dashboard.js"></script>
     <!-- ---------------------- -->
     <!-- JS Links Footer ------>
     <!-- ---------------------- -->

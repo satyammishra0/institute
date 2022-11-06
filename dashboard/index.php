@@ -96,7 +96,7 @@ if ($_SESSION['success']) {
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>JAVA Course</td>
+                            <td>The ultimate JAVA Course</td>
                             <td>
                                 <button class="basic-btn">Update</button>
                                 <button class="basic-btn">Delete</button>
@@ -104,7 +104,7 @@ if ($_SESSION['success']) {
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>CSS Course</td>
+                            <td>The ultimate CSS Course</td>
                             <td>
                                 <button class="basic-btn">Update</button>
                                 <button class="basic-btn">Delete</button>
@@ -112,7 +112,7 @@ if ($_SESSION['success']) {
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>JS Course</td>
+                            <td>The ultimate Fullstack JS Course</td>
                             <td>
                                 <button class="basic-btn">Update</button>
                                 <button class="basic-btn">Delete</button>
@@ -132,6 +132,8 @@ if ($_SESSION['success']) {
                     Want to give more to students <br>
                     Let's Add more courses
                 </h2>
+
+
             </div>
         </div>
 

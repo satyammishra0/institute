@@ -19,7 +19,6 @@ let right_all_courses = document.getElementById("right-all-courses");
 let right_add_course = document.getElementById("right-add-course");
 
 all_courses_btn.addEventListener("click", () => {
-  // Adding the style to dashboard right panel
   all_courses_btn_parent.classList.add("active_content_tab");
   add_courses_btn_parent.classList.remove("active_content_tab");
   // Displaying the desired content

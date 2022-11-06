@@ -52,17 +52,21 @@
   background: none;
   justify-content: center;
   place-items: center;
+  margin: 4% 0;
+  cursor: pointer;
 }
+
 .dashboard-content-list > ul > li > button {
   font-size: 17px;
-  color: #551a8b;
+  /* color: #551a8b; */
 }
+
 .dashboard-content-list > ul > li > button > ion-icon {
   margin-top: 4px;
-  color: #551a8b;
+  /* color: #551a8b; */
 }
+
 .active_content_tab {
-  margin: 4% 0;
   background-color: var(--primary-color);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -140,8 +144,11 @@
   text-align: center;
   border: 0.4px solid var(--primary-lighter-color);
   padding: 10px 0;
+  text-transform: uppercase;
 }
-
+.right-all-courses > table > tbody > tr > td:first-child {
+  width: 10%;
+}
 .right-all-courses > table > tbody > tr > td > button {
   padding: 8px 25px;
   background-color: var(--primary-lighter-color);
@@ -155,6 +162,7 @@
 /* ---------------------- */
 /* Add a new course design */
 /* ---------------------- */
+
 .right-all-courses {
   display: none;
 }

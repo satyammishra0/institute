@@ -135,7 +135,6 @@ if ($_SESSION['success']) {
                 <!-- ------Add Block || Form -->
                 <!-- ---------------------- -->
                 <section class="addition-form">
-
                     <!-- ---------------------- -->
                     <!-- ------ Main Addition Form   -->
                     <!-- ---------------------- -->
@@ -149,9 +148,8 @@ if ($_SESSION['success']) {
                             <input type="text" value="Free" name="course_price"><br>
                             <small>Please enter course Price</small><br>
                         </div>
-
+                        <!-- Course Name Of Course-->
                         <div class="add_input_conatiner">
-                            <!-- Course Name Of Course-->
                             <label for="course_name">Course Name</label><br>
                             <input type="text" name="course_name"><br>
                             <small>Please enter course name</small><br>
@@ -160,7 +158,7 @@ if ($_SESSION['success']) {
                         <div class="add_input_conatiner">
                             <label for="starting_date">starting date</label><br>
                             <input type="text" name="starting_date"><br>
-                            <small>Please enter course start date</small><br>
+                            <small>Please enter start date (Format:: 10 | jan | 2022)</small><br>
                         </div>
                         <!-- Total Time Of Course-->
                         <div class="add_input_conatiner">
@@ -179,6 +177,23 @@ if ($_SESSION['success']) {
                         <!-- Submit Detials Of Course-->
                         <div class="flex-center">
                             <input class="basic-btn" type="Submit" name="add_course_btn" value="submit">
+                        </div>
+
+                        <div class="response-message">
+                            <p class="success-message">
+                                <?php
+                                if (isset($_GET['success'])) {
+                                    echo $_GET['success'];
+                                }
+                                ?>
+                            </p>
+                            <p class="error-message">
+                                <?php
+                                if (isset($_GET['error'])) {
+                                    echo $_GET['error'];
+                                }
+                                ?>
+                            </p>
                         </div>
                     </form>
                 </section>

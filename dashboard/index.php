@@ -67,7 +67,7 @@ if ($_SESSION['success']) {
                 </ul>
             </div>
             <div class="dashboard-footer">
-                <button onclick="logout_function()" name="admin_logout_btn">
+                <button onclick="logout_function()">
                     <a href="admin_logout.php">Logout</a>
                 </button>
             </div>

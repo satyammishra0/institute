@@ -23,7 +23,7 @@ require_once "../configuration.php";
     <link rel="stylesheet" href="<?= getCss('utility.css'); ?>">
     <link rel="stylesheet" href="<?= getCss('footer.css'); ?>">
     <link rel="stylesheet" href="<?= getCss('login.css'); ?>">
-    <link rel="stylesheet" href="<?= getCss('dashboard.css'); ?>">
+    <link rel="stylesheet" href="<?= getCss('admin_dashboard.css'); ?>">
 
 </head>
 
@@ -53,6 +53,10 @@ require_once "../configuration.php";
                 if (isset($_GET['error'])) {
                     $error = $_GET['error'];
                     echo "<div class='error' style='color:red;font-size:12px;'>$error</div> ";
+                }
+                if (isset($_GET['successMessage'])) {
+                    $successMessage = $_GET['successMessage'];
+                    echo "<div class='successMessage' style='color:#04d804;font-size:12px;'>$successMessage</div> ";
                 }
                 ?>
                 <br>

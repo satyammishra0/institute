@@ -67,7 +67,7 @@ if ($_SESSION['success']) {
                 </ul>
             </div>
             <div class="dashboard-footer">
-                <button onclick="logout_function()" name="admin_logout_btn">
+                <button>
                     <a href="admin_logout.php">Logout</a>
                 </button>
             </div>
@@ -98,8 +98,9 @@ if ($_SESSION['success']) {
                             <td>1</td>
                             <td>The ultimate JAVA Course</td>
                             <td>
-                                <button class="basic-btn">Update</button>
-                                <button class="basic-btn" onclick="delete_confirmation()"><a href="delete_course.php">Delete</a> </button>
+                                <?php $course_id = 1; ?>
+                                <button class="basic-btn"><a href="<?php echo "update_blog.php?course_id=$course_id"; ?>">Update</a></button>
+                                <button class="basic-btn">Delete</button>
                             </td>
                         </tr>
                         <tr>

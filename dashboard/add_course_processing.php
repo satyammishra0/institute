@@ -56,4 +56,4 @@ if (isset($submitBtn)) {
 
 // str_replace("\'", `'`, $courseName)
 
-// Work on Update and delete functionality
+// Work on Update page and update query

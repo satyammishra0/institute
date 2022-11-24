@@ -1,5 +1,15 @@
 ** This is the replica of PW website  **
 
+** Some Of the Key features of the Portal **
+
+> It contains a beutiful UI Frontend for the user attraction With which users Interact Inspired from (https://pwskills.com/) 
+>  A user Dashboard || Profile For User Details (Personal Information, Profile Detials, CRUD over Profile, CRUD on the UI, CRUD on the Databse, Focusing on chnaging the complete data of fields in DB)
+> Students can login to the Profile with the phone number which is checked with the OTP Validation Which is used by using the third party API and Has a time limitation of 30 Seconds 
+> Login and logout functionality for the admin as well as the user and student.
+> Contains several pages for the users to interact
+
+**User Friendly Detials**
+
 This site is not a complete Replica, it's a copy with some enhancements especially focusing on backend and making frontend look better.
 
 Here is an overview about site:
@@ -16,3 +26,7 @@ Then comes for the admin who needs to add more courses // updated the existing c
 **My main focus while making this was to focus on making a well documented project with meaningful comments and then making it open source so that any one can use it freely without any hesitation and can even update it according to their needs too. If you face any problem while cloning or changing the project please let me know in the issue section. I'll be glad to help or suggest a way .
  
 ** Waiting for everyone's pull request // issues // and updates even love to collaborate with other people for community . Love to expand it more and collaborate with others to take the project to the next level .
+
+
+
+

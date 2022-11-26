@@ -58,12 +58,10 @@
 
 .dashboard-content-list > ul > li > button {
   font-size: 17px;
-  /* color: #551a8b; */
 }
 
 .dashboard-content-list > ul > li > button > ion-icon {
   margin-top: 4px;
-  /* color: #551a8b; */
 }
 
 .active_content_tab {
@@ -238,4 +236,26 @@
 
 .success-message {
   color: rgb(196, 255, 196);
+}
+
+/* ---------------------- */
+/* Main addition form design */
+/* ---------------------- */
+
+.dashboard-content-list-update-pg > ul > li > a > button {
+  border: none;
+  font-size: 22px;
+  background: none;
+  justify-content: center;
+  place-items: center;
+  margin: 4% 0;
+  cursor: pointer;
+}
+
+.dashboard-content-list-update-pg > ul > li > a > button {
+  font-size: 17px;
+}
+
+.dashboard-content-list-update-pg > ul > li > a > button > ion-icon {
+  margin-top: 4px;
 }

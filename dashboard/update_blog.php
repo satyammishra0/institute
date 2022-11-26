@@ -49,21 +49,16 @@ if ($_SESSION['success']) {
                 <br>
                 <button id="message_admin_btn"><a href="#">Hello, Admin</a></button>
             </div>
-            <div class="dashboard-content-list">
+            <div class="dashboard-content-list-update-pg">
                 <ul>
                     <li>
-                        <button class="flex flex-center" id="all_courses_btn">
-                            <ion-icon name="caret-forward"></ion-icon>
-                            All Courses
-                        </button>
+                        <a href="./index.php">
+                            <button class="flex flex-center">
+                                <ion-icon name="caret-forward"></ion-icon>
+                                Home
+                            </button>
+                        </a>
                     </li>
-                    <li>
-                        <button class="flex flex-center" id="add_courses_btn">
-                            <ion-icon name="caret-forward"></ion-icon>
-                            Add Course
-                        </button>
-                    </li>
-
                 </ul>
             </div>
             <div class="dashboard-footer">
@@ -78,52 +73,6 @@ if ($_SESSION['success']) {
         <!-- ---------------------- -->
         <div class="dashboard-right">
 
-            <!-- ---------------------- -->
-            <!-- ------All Courses Table-->
-            <!-- ---------------------- -->
-            <div class="right-all-courses" id="right-all-courses">
-                <h2>
-                    All Courses
-                </h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Serial No.</th>
-                            <th>Course Name</th>
-                            <th>Operations</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>The ultimate JAVA Course</td>
-                            <td>
-                                <?php $course_id = 1; ?>
-                                <button class="basic-btn"><a href="<?php echo "update_blog.php?course_id=$course_id"; ?>">Update</a></button>
-                                <button class="basic-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>The ultimate CSS Course</td>
-                            <td>
-                                <button class="basic-btn">Update</button>
-                                <button class="basic-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>The ultimate Fullstack JS Course</td>
-                            <td>
-                                <button class="basic-btn">Update</button>
-                                <button class="basic-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
 
             <!-- ---------------------- -->
             <!-- ------Adding new courses   -->
@@ -210,7 +159,7 @@ if ($_SESSION['success']) {
     <!--this Pages JS here  ------>
     <!-- ---------------------- -->
 
-    <script src="../assets/js/admin_dashboard.js"></script>
+    <!-- <script src="../assets/js/admin_dashboard.js"></script> -->
     <!-- ---------------------- -->
     <!-- JS Links Footer ------>
     <!-- ---------------------- -->
@@ -219,3 +168,5 @@ if ($_SESSION['success']) {
 </body>
 
 </html>
+
+<!-- Update the Update section and extracting the data from DB -->

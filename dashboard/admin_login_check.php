@@ -22,7 +22,7 @@ $enteredPassword = $_POST['admin_password'];
 if ($enterdMail == $adminEmail && $enteredPassword == $adminPassword) {
 
     // Storing success message on session
-    $success_message = 'He is the admin boss 👑';
+    $success_message = 'You are the admin boss 👑';
     $_SESSION['success'] = $success_message;
 
     header('Location:./index.php?&success_message=' . $success_message);
@@ -31,7 +31,6 @@ if ($enterdMail == $adminEmail && $enteredPassword == $adminPassword) {
 
 // Pushing back to login page with error
 else {
-    echo "hello world";
 
     $error = "You are not the Admin (🙂) ! Please recheck the details";
     // header('Location:./admin_login.php?&error=' . $error);

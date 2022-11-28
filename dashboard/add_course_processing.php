@@ -36,18 +36,26 @@ if (isset($submitBtn)) {
                 // Redirection with success message
                 header('Location:index.php?success=' . $successMessage);
             } else {
+
+                // Redirection with error message
                 $error = 'Some error occured please retry';
                 header('Location:index.php?error=' . $error);
             }
         } else {
+
+            // Redirection with error message
             $error = "Wrong image uploaded please retry !! ";
             header('Location:index.php?error=' . $error);
         }
     } else {
+
+        // Redirection with error message
         $error = "Some of the fields are empty !! Please Retry ";
         header('Location:index.php?error=' . $error);
     }
 } else {
+
+    // Redirection with error message
     $error = "That's not a right way to come in 🤨";
     header('Location:index.php?error=' . $error);
 }

@@ -17,7 +17,7 @@ if ($_SESSION['success']) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Admin Panel - Update Page For Course Updation</title>
     <!-- ---------------------- -->
     <!-- ------ Routes here ------>
     <!-- ---------------------- -->
@@ -157,19 +157,10 @@ if ($_SESSION['success']) {
                         </div>
                     </form>
                 </section>
-
-
             </div>
         </div>
-
     </section>
 
-
-    <!-- ---------------------- -->
-    <!--this Pages JS here  ------>
-    <!-- ---------------------- -->
-
-    <!-- <script src="../assets/js/admin_dashboard.js"></script> -->
     <!-- ---------------------- -->
     <!-- JS Links Footer ------>
     <!-- ---------------------- -->
@@ -179,4 +170,4 @@ if ($_SESSION['success']) {
 
 </html>
 
-<!-- Update the Update section and extracting the data from DB -->
+<!-- Update section completed  -->

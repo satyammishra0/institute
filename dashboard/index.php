@@ -98,7 +98,7 @@ if ($_SESSION['success']) {
                             <td>1</td>
                             <td>The ultimate JAVA Course</td>
                             <td>
-                                <button class="basic-btn">Update</button>
+                                <button class="basic-btn"><a href="update_course.php">Update</a></button>
                                 <button class="basic-btn" onclick="delete_confirmation()"><a href="delete_course.php">Delete</a> </button>
                             </td>
                         </tr>

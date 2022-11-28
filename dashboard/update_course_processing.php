@@ -24,6 +24,7 @@ if (isset($submitBtn)) {
 
         // Checking error in image uploading
         if ($imgError == 0) {
+            
             // Destination folder where image will be stored
             $destinationPath = '../assets/images/course_image_upload/' . $imgName;
             move_uploaded_file($imgCurrentPath, $destinationPath);

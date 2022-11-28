@@ -94,15 +94,25 @@ if ($_SESSION['success']) {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>The ultimate JAVA Course</td>
-                            <td>
-                                <button class="basic-btn"><a href="update_course.php">Update</a></button>
-                                <button class="basic-btn" onclick="delete_confirmation()"><a href="delete_course.php">Delete</a> </button>
-                            </td>
-                        </tr>
-                        <tr>
+
+                        <?php
+                        $extractCoursesQuery = "SELECT * FROM `course-details`;";
+                        $runExtractCoursesQuery = mysqli_query($conn, $extractCoursesQuery);
+                        $fetchCoursesRow = mysqli_num_rows($runExtractCoursesQuery);
+                        $fetchCoursesDate = mysqli_fetch_array($runExtractCoursesQuery);
+                        while ($fetchCoursesRow > 1) {
+                            echo "<tr>";
+                            echo "<td>" . $fetchCoursesDate['id'] . "</td>";
+                            echo "<td>" . $fetchCoursesDate['course_name'] . "</td>";
+                            echo "<td>
+                            <button class='basic-btn'><a href='update_course.php'>Update</a></button>
+                            <button class='basic-btn' onclick='delete_confirmation()'><a href='delete_course.php'>Delete</a> </button>
+                             </td>";
+                            echo "</tr>";
+                        }
+                        ?>
+
+                        <!-- <tr>
                             <td>2</td>
                             <td>The ultimate CSS Course</td>
                             <td>
@@ -119,7 +129,7 @@ if ($_SESSION['success']) {
                             </td>
                         </tr>
                         <tr>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>

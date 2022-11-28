@@ -72,14 +72,12 @@ if ($_SESSION['success']) {
         <!-- ------Dashboard right  -->
         <!-- ---------------------- -->
         <div class="dashboard-right">
-
-
             <!-- ---------------------- -->
             <!-- ------Adding new courses   -->
             <!-- ---------------------- -->
             <div class="right-add-course" id="right-add-course">
                 <h2>
-                    Want to give more to students <br>
+                    It's Ok sometimes it get's wrong ! let's fix it<br>
                 </h2>
                 <!-- ---------------------- -->
                 <!-- ------Add Block || Form -->
@@ -88,32 +86,44 @@ if ($_SESSION['success']) {
                     <!-- ---------------------- -->
                     <!-- ------ Main Addition Form   -->
                     <!-- ---------------------- -->
-                    <form action="add_course_processing.php" method="post" enctype='multipart/form-data'>
+                    <form action="update_course_processing.php" method="post" enctype='multipart/form-data'>
                         <h2>
-                            Let's Add more courses
+                            Let's change it in Seconds
                         </h2>
+
+                        <!-- ---------------------- -->
+                        <!-- ------ DATA Pull Query    -->
+                        <!-- ---------------------- -->
+                        <?php
+                        $courseId = $_GET['courseId'];
+                        $_SESSION['courseId'] = $courseId;
+                        $extractQuery = "SELECT * FROM `course-details` WHERE `id`= $courseId;";
+                        $runQuery = mysqli_query($conn, $extractQuery);
+                        $extractedData = mysqli_fetch_array($runQuery);
+                        ?>
+
                         <!-- Course Price Of Course-->
                         <div class="add_input_conatiner">
                             <label for="course_price">course price</label><br>
-                            <input type="text" value="Free" name="course_price"><br>
+                            <input type="text" value="<?= $extractedData['price']; ?>" name="course_price"><br>
                             <small>Please enter course Price</small><br>
                         </div>
                         <!-- Course Name Of Course-->
                         <div class="add_input_conatiner">
                             <label for="course_name">Course Name</label><br>
-                            <input type="text" name="course_name"><br>
+                            <input type="text" value="<?= $extractedData['course_name'] ?>" name="course_name"><br>
                             <small>Please enter course name</small><br>
                         </div>
                         <!-- Straring Date Of Course-->
                         <div class="add_input_conatiner">
                             <label for="starting_date">starting date</label><br>
-                            <input type="text" name="starting_date"><br>
+                            <input type="text" value="<?= $extractedData['starting_date'] ?>" name="starting_date"><br>
                             <small>Please enter start date (Format:: 10 | jan | 2022)</small><br>
                         </div>
                         <!-- Total Time Of Course-->
                         <div class="add_input_conatiner">
                             <label for="total_time">total time</label><br>
-                            <input type="text" name="total_time"><br>
+                            <input type="text" value="<?= $extractedData['total_course_time']; ?>" name="total_time"><br>
                             <small>Please enter total time of course</small><br>
                         </div>
 

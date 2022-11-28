@@ -20,6 +20,7 @@ if (isset($submitBtn)) {
         $imgName = $fileName['name'];
         $imgCurrentPath = $fileName['tmp_name'];
         $imgError = $fileName['error'];
+        $courseId = $_SESSION['courseId'];
 
         // Checking error in image uploading
         if ($imgError == 0) {
@@ -27,11 +28,12 @@ if (isset($submitBtn)) {
             $destinationPath = '../assets/images/course_image_upload/' . $imgName;
             move_uploaded_file($imgCurrentPath, $destinationPath);
 
-            // Inserting data into DB
-            $addInsertQuery = "INSERT INTO `course-details` (`price`, `course_name`, `starting_date`, `total_course_time`, `file_name`) VALUES ('$coursePrice', '$courseName', '$startingDate', '$totalTime', '$imgName');";
-            $addRunQuery = mysqli_query($conn, $addInsertQuery);
-            if ($addInsertQuery) {
-                $successMessage = "Course Uploaded Successfully . Thanks for adding more 😊 ";
+            // Update query for DB
+            $updateQuery = "UPDATE `course-details` SET `price`='$coursePrice',`course_name`='$courseName',`starting_date`='$startingDate',`total_course_time`='$totalTime',`file_name`='$imgName' WHERE `course-details`.`id` = $courseId;";
+
+            $addRunQuery = mysqli_query($conn, $updateQuery);
+            if ($updateQuery) {
+                $successMessage = "Course Updated Successfully . Thanks for Contribution 😊 ";
 
                 // Redirection with success message
                 header('Location:index.php?success=' . $successMessage);

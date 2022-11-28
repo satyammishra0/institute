@@ -1,7 +1,7 @@
 <?php
 require_once "../configuration.php";
 
-$courseId = $_GET['courseId'];
+$courseId = $_GET['id'];
 
 // Delete course query to be executed
 

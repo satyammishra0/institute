@@ -95,7 +95,7 @@ if ($_SESSION['success']) {
                         <!-- ------ DATA Pull Query    -->
                         <!-- ---------------------- -->
                         <?php
-                        $courseId = $_GET['courseId'];
+                        $courseId = $_GET['id'];
                         $_SESSION['courseId'] = $courseId;
                         $extractQuery = "SELECT * FROM `course-details` WHERE `id`= $courseId;";
                         $runQuery = mysqli_query($conn, $extractQuery);

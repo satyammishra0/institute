@@ -95,41 +95,28 @@ if ($_SESSION['success']) {
                     </thead>
                     <tbody>
 
+                        <!-- ---------------------- -->
+                        <!-- Extracting Table data from DB -->
+                        <!-- ---------------------- -->
                         <?php
+
+                        // Selecting the Complete Data
                         $extractCoursesQuery = "SELECT * FROM `course-details`;";
                         $runExtractCoursesQuery = mysqli_query($conn, $extractCoursesQuery);
-                        $fetchCoursesRow = mysqli_num_rows($runExtractCoursesQuery);
-                        $fetchCoursesDate = mysqli_fetch_array($runExtractCoursesQuery);
-                        while ($fetchCoursesRow > 1) {
+
+                        // Printing it in table format
+                        while ($row = mysqli_fetch_array($runExtractCoursesQuery)) {
+                            $courseId = $row['id'];
                             echo "<tr>";
-                            echo "<td>" . $fetchCoursesDate['id'] . "</td>";
-                            echo "<td>" . $fetchCoursesDate['course_name'] . "</td>";
+                            echo "<td>" . $row['id'] . "</td>";
+                            echo "<td>" . $row['course_name'] . "</td>";
                             echo "<td>
-                            <button class='basic-btn'><a href='update_course.php'>Update</a></button>
-                            <button class='basic-btn' onclick='delete_confirmation()'><a href='delete_course.php'>Delete</a> </button>
+                            <button class='basic-btn'><a href='update_course.php?id=$courseId'>Update</a></button>
+                            <button class='basic-btn' onclick='delete_confirmation()'><a href='delete_course.php?id=$courseId'>Delete</a> </button>
                              </td>";
                             echo "</tr>";
                         }
                         ?>
-
-                        <!-- <tr>
-                            <td>2</td>
-                            <td>The ultimate CSS Course</td>
-                            <td>
-                                <button class="basic-btn">Update</button>
-                                <button class="basic-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>The ultimate Fullstack JS Course</td>
-                            <td>
-                                <button class="basic-btn">Update</button>
-                                <button class="basic-btn">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                        </tr> -->
                     </tbody>
                 </table>
             </div>

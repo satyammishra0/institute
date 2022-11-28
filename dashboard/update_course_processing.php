@@ -31,8 +31,8 @@ if (isset($submitBtn)) {
             // Update query for DB
             $updateQuery = "UPDATE `course-details` SET `price`='$coursePrice',`course_name`='$courseName',`starting_date`='$startingDate',`total_course_time`='$totalTime',`file_name`='$imgName' WHERE `course-details`.`id` = $courseId;";
 
-            $addRunQuery = mysqli_query($conn, $updateQuery);
-            if ($updateQuery) {
+            $updateRunQuery = mysqli_query($conn, $updateQuery);
+            if ($updateRunQuery) {
                 $successMessage = "Course Updated Successfully . Thanks for Contribution 😊 ";
 
                 // Redirection with success message

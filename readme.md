@@ -29,4 +29,11 @@ Then comes for the admin who needs to add more courses // updated the existing c
 
 
 
+>I have learned how to manage time in PHP,
+>Second thing I have learned how to handle multiple folder structure,
+>Third I have learned how to handle and integrate APIs,
+>Fourth how to manipulate DOM with JavaScript ,
+>Fifth how to integrate Payment Gateway with the existing system,
+>Sixth Reading documentation of Razorpay,
+>and last and most important is how to write well structured and well documented code .
 

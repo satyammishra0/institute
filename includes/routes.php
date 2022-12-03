@@ -13,7 +13,7 @@
 // }
 
 // $url = "http://localhost/GROWUPNEXT/satyam/institute/";
-$url = "solvealgo.com/";
+$url = "https://solvealgo.com/";
 
 define('URL', $url);
 

@@ -12,7 +12,9 @@
 //     $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 // }
 
-$url = "http://localhost/GROWUPNEXT/satyam/institute/";
+// $url = "http://localhost/GROWUPNEXT/satyam/institute/";
+$url = "solvealgo.com/";
+
 define('URL', $url);
 
 // Getting the main home path

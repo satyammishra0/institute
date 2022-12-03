@@ -10,7 +10,7 @@
 $serverName = 'localhost';
 $dbuserName = 'u809849815_user';
 $password = 'Satyammi_007';
-$dbName = "institute";
+$dbName = "u809849815_institute";
 
 
 

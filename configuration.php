@@ -17,7 +17,7 @@ $dbName = "u809849815_institute";
 $conn = mysqli_connect($serverName, $dbuserName, $password, $dbName);
 
 if ($conn) {
-    echo "Connection established";
+    // echo "Connection established";
 }
 
 

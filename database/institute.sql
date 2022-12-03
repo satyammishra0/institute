@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 09, 2022 at 01:08 PM
+-- Generation Time: Dec 03, 2022 at 09:02 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -50,7 +50,7 @@ CREATE TABLE `course-details` (
   `id` int(11) NOT NULL,
   `price` varchar(255) NOT NULL,
   `course_name` text NOT NULL,
-  `stating_date` varchar(100) NOT NULL,
+  `starting_date` varchar(100) NOT NULL,
   `total_course_time` varchar(100) NOT NULL,
   `file_name` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -59,16 +59,13 @@ CREATE TABLE `course-details` (
 -- Dumping data for table `course-details`
 --
 
-INSERT INTO `course-details` (`id`, `price`, `course_name`, `stating_date`, `total_course_time`, `file_name`) VALUES
+INSERT INTO `course-details` (`id`, `price`, `course_name`, `starting_date`, `total_course_time`, `file_name`) VALUES
 (1, 'Free', 'Java - Foundation', '21st Octob', '6 months', ''),
 (2, '$100', 'c++ course', '14 | 08 | ', '8 months ', 'new.img'),
-(3, 'Free', 'java\'course', '14|08|2022', '6 months', '3.png'),
+(3, 'Free', 'java course', '14|08|2022', '6 months', '3.png'),
 (4, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png'),
 (5, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png'),
-(6, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png'),
-(7, '$13', 'Javascript course', '10 | jan |', '12 months', 'Virtual (2).png'),
-(8, 'Free', 'NEw DSA', '10 | jan | 2022', '12 months', 'Virtual (2).png'),
-(9, '10$', 'new Dsa ', '10', '10 months', 'Virtual (5).png');
+(6, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png');
 
 -- --------------------------------------------------------
 
@@ -116,7 +113,9 @@ INSERT INTO `userdetails` (`id`, `name`, `contactno`, `otp`) VALUES
 (26, 'newuser', '9005948667', 4986),
 (27, 'newuser', '9005948667', 4986),
 (28, 'satyam ', '9936205436', 8729),
-(29, 'satyam ', '9005948007', 1094);
+(29, 'satyam ', '9005948007', 1094),
+(30, 'satyam', '9005948007', 5399),
+(31, 'satyam', '9005948007', 4611);
 
 --
 -- Indexes for dumped tables
@@ -160,13 +159,9 @@ ALTER TABLE `course-details`
 -- AUTO_INCREMENT for table `userdetails`
 --
 ALTER TABLE `userdetails`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
--- HOW TO GET SECOND HIGHEST VALUE OF COLUMN
--- SELECT `otp` FROM `userdetails` ORDER BY `otp` ASC LIMIT 1 OFFSET 1;

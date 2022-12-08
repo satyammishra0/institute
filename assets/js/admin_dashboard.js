@@ -47,3 +47,21 @@ function delete_confirmation() {
 function logout_function() {
   alert("Are you sure you want to Logout !! Please rethink");
 }
+
+//------------------------
+// Function to fetch random quote
+//------------------------
+
+// function fetchQuote() {
+//   let quoteParaId = document.getElementById("quote");
+
+//   fetch("https://type.fit/api/quotes")
+//     .then((response) => {
+//       return response.json();
+//     })
+
+//     .then((data) => (quoteParaId.innerText = data[num].text))
+//     .catch((err) => console.error(err));
+// }
+
+// fetchQuote();

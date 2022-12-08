@@ -125,6 +125,9 @@ if ($_SESSION['success']) {
             <!-- ------Adding new courses   -->
             <!-- ---------------------- -->
             <div class="right-add-course" id="right-add-course">
+                <div class="dashboard-header">
+                    <p id="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga autem ut molestiae vel quibusdam pariatur ullam, qui quia delectus libero!</p>
+                </div>
                 <h2>
                     Want to give more to students <br>
                 </h2>

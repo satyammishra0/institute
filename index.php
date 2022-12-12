@@ -94,7 +94,7 @@ require_once "./configuration.php";
     </section>
 
     <!-- ---------------------- -->
-    <!-- Company's images slideshow here --  -->
+    <!-- Company's images slideshow here ----  -->
     <!-- ---------------------- -->
 
     <section class="company-img-slider">

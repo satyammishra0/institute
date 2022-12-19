@@ -12,8 +12,8 @@
 //     $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 // }
 
-$url = "http://localhost/GROWUPNEXT/satyam/institute/";
-// $url = "https://solvealgo.com/";
+// $url = "http://localhost/GROWUPNEXT/satyam/institute/";
+$url = "https://solvealgo.com/";
 
 define('URL', $url);
 

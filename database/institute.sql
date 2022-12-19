@@ -62,7 +62,7 @@ CREATE TABLE `course-details` (
 INSERT INTO `course-details` (`id`, `price`, `course_name`, `stating_date`, `total_course_time`, `file_name`) VALUES
 (1, 'Free', 'Java - Foundation', '21st Octob', '6 months', ''),
 (2, '$100', 'c++ course', '14 | 08 | ', '8 months ', 'new.img'),
-(3, 'Free', 'java\'course', '14|08|2022', '6 months', '3.png'),
+(3, 'Free', 'java \"course', '14|08|2022', '6 months', '3.png'),
 (4, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png'),
 (5, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png'),
 (6, '$13', 'Javascript course', '10 | jan |', '9 months', 'Virtual (2).png'),

@@ -7,6 +7,7 @@
 > Students can login to the Profile with the phone number which is checked with the OTP Validation Which is used by using the third party API and Has a time limitation of 30 Seconds 
 > Login and logout functionality for the admin as well as the user and student.
 > Contains several pages for the users to interact
+This is on hold now working on other projects 
 
 **User Friendly Detials**
 
